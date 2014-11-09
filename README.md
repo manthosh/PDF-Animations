@@ -2,4 +2,7 @@ PDF-Animations
 ==============
 
 Algorithm Animation in PDF Documents
-using Lua
+
+The objective of this library is to be able to incorporate animated illustrations of algorithms in PDF documents for educational purpose. The PDF documents are generated using ConTEXt, a TEX macro that is tightly integrated with MetaPost, powerful vector graphic programming language, and Lua, a modern scripting language. Users can implement, in Lua, algorithms manipulating data structures such as arrays, lists, trees, and graphs, and using the API provided, can animate the algorithms. The API handles the animation and the automatic layout of the data structure diagrams. The animation module also shows the pseudocode for the algorithm and highlights the currently executing statement.
+
+Animation is a sequence of frames, with capabilities to play, pause, resume, navigate to next and previous frames, change framerate and skip certain frames when needed. The animation module is a modification of the t-animation in ConTEXt and implemented primarily using JavaScript. The data structure diagrams are drawn using MetaPost, and the layout using Lua. while an illustrative set of algorithms and data structures have been implemented, the main contribution of the work is to provide an API for the layout and animation which users can use for a variety of algorithms on these data structures. The documents generated can be viewed using the freely available Adobe Reader v6.0 or above.
